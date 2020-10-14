@@ -1,0 +1,37 @@
+.main {
+    height: 100vh;
+}
+
+.textView {
+    height: 70vh;
+}
+
+.img {
+    max-width: 14%;
+    border-radius: 50%;
+}
+
+@media (max-width:576px) {
+    .textView {
+        height: 90vh;
+    }
+}
+
+.loader {
+    width: 100%;
+    height: 100%;
+    z-index: 99;
+    /* background: #08aae1; */
+    background-color: #f9fafb;
+    /* background: linear-gradient(45deg, #c624fc, #1d6bfd); */
+    position: fixed;
+    top: 0;
+    left: 0;
+}
+
+.svg {
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}

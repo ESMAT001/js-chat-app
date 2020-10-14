@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <link rel="stylesheet" href="style.css">
+    <title>Chat app</title>
+</head>
+
+<body>
+    <!-- loader -->
+    <div class="loader">
+
+        <svg class="svg" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" style="margin: auto; background: none; display: block; shape-rendering: auto;" width="10%" height="10%" viewBox="0 0 100 100" preserveAspectRatio="xMidYMid">
+            <circle cx="50" cy="50" fill="none" stroke="#007bff" stroke-width="3" r="37"
+                stroke-dasharray="174.35839227423352 60.119464091411174" transform="rotate(273.688 50 50)">
+                <animateTransform attributeName="transform" type="rotate" repeatCount="indefinite"
+                    dur="1.0416666666666665s" values="0 50 50;360 50 50" keyTimes="0;1"></animateTransform>
+            </circle>
+        </svg>
+    </div>
+    <!-- /loader -->
+    <main class="p-0 p-sm-4  main d-flex flex-column justify-content-center">
+        <div class="row p-0 m-0">
+            <div class="col-12 col-sm-10 col-md-8 col-lg-6 mx-auto bg-light shadow border rounded">
+                <div class="row">
+                    <div class="col textView p-3 overflow-auto" id="container">
+                        <!-- start -->
+                        <!-- <div class="d-flex align-items-start mb-3">
+                            <img src="img001.png" class="img" alt="">
+                            <div class="div d-inline-block">
+                                <div class="clearfix">
+                                    <small class="font-weight-light text-secondary">esmat</small>
+                                </div>
+                                <h5 class="bg-primary p-2 rounded-lg border font-weight-light text-white m-0">hi ad sdfvsd sd </h5>
+                                <div class="clearfix">
+                                    <small class="font-weight-light text-secondary float-right">6:56</small>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="d-flex flex-row-reverse align-items-start mb-3">
+                            <img src="img001.png" class="img" alt="">
+                            <div class="div d-inline-block">
+                                <div class="clearfix">
+                                    <small class="font-weight-light text-secondary float-right">esmat</small>
+                                </div>
+                                <h5 class="bg-primary p-2 rounded-lg border font-weight-light text-white m-0">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Praesentium sequi cum illo voluptate nobis, eaque vero nemo, odit non deserunt ipsam adipisci error suscipit tempora ducimus consequuntur eveniet aliquam incidunt!
+                                </h5>
+                                <div class="clearfix">
+                                    <small class="font-weight-light text-secondary">6:56</small>
+                                </div>
+                            </div>
+                        </div> -->
+                        <!-- end -->
+
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="input-group">
+                        <input type="text" class="form-control " id="textInput" placeholder="enter your massege">
+                        <div class="input-group-append">
+                            <button class="btn b  btn-success" id="btn" type="submit"><i></i> send</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </main>
+
+    <script src="/__/firebase/7.19.1/firebase-app.js"></script>
+
+
+    <script src="/__/firebase/7.19.1/firebase-analytics.js"></script>
+    <script src="/__/firebase/7.19.1/firebase-database.js"></script>
+    <script src="/__/firebase/init.js"></script>
+
+
+
+
+    <!-- The core Firebase JS SDK is always required and must be listed first -->
+    <!-- <script src="https://www.gstatic.com/firebasejs/7.19.1/firebase-app.js"></script> -->
+
+    <!-- TODO: Add SDKs for Firebase products that you want to use
+     https://firebase.google.com/docs/web/setup#available-libraries -->
+    <!-- <script src="https://www.gstatic.com/firebasejs/7.19.1/firebase-analytics.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/7.19.1/firebase-database.js"></script> -->
+    <script>
+        // Your web app's Firebase configuration
+        // var firebaseConfig = {
+        //     apiKey: "AIzaSyDnn1UR9Zc8uzrgN2p6vqXqXPUnvCJcdpk",
+        //     authDomain: "chat-app-js-001.firebaseapp.com",
+        //     databaseURL: "https://chat-app-js-001.firebaseio.com",
+        //     projectId: "chat-app-js-001",
+        //     storageBucket: "chat-app-js-001.appspot.com",
+        //     messagingSenderId: "385012598514",
+        //     appId: "1:385012598514:web:8a431e219a44f84f31f26b",
+        //     measurementId: "G-251V4HS9FL"
+        // };
+        // Initialize Firebase
+        // firebase.initializeApp(firebaseConfig);
+        // firebase.analytics();
+    </script>
+    <script src="app.js"></script>
+</body>
+
+</html>
